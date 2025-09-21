@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego viado</title>
+    <link rel="stylesheet" href="estilo.css">
+
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <input type="text" id="taskInput" placeholder="Adicione um produto">
+        <select id="taskCategory">
+            <option value="" disabled selected>Selecione uma categoria</option>
+            <option value="Frutas">Frutas</option>
+            <option value="Verduras">Verduras</option>
+            <option value="Laticínios">Laticínios</option>
+            <option value="Carnes">Carnes</option>
+            <option value="Bebidas">Bebidas</option>
+            <option value="Outros">Outros</option>
+        </select>
+        <button onclick="addTask()">Adicionar</button>
+        <ul id="taskList"></ul>
+    </div>
+
+
+
+<script src="desafio.js"></script>
+
+
+
+</body>
+</html>
