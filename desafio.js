@@ -44,7 +44,7 @@ function addTask() {
 
 function editTask(button) {
     const li = button.parentElement;
-    const span = li.querySelector('span');  
+    const span = li.querySelector('span'); 
     const oldTaskText = span.textContent.trim(); // Guarda o texto antigo para usar na validação
     
     const newTaskText = prompt('Edite a tarefa:', oldTaskText);
@@ -71,6 +71,8 @@ function editTask(button) {
         }
     }
 
+   span.textContent = newTaskText.trim(); 
+
 }
 
 function deleteTask(button) {
@@ -82,6 +84,8 @@ function deleteTask(button) {
     tasklist.removeChild(li);
 
 }
+
+
 
 
 
